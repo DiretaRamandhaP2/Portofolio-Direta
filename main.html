@@ -1,0 +1,229 @@
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Interaktif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 bg-black/80 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#home" class="text-2xl font-bold text-purple-600">PORTOFOLIO DIRETA</a>
+            <ul id="destop-menu" class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-white hover:text-purple-600">Home</a></li>
+                <li><a href="#about" class="text-white hover:text-purple-600">About</a></li>
+                <li><a href="#project" class="text-white hover:text-purple-600">Project</a></li>
+                <li><a href="#contact" class="text-white hover:text-purple-600">Contact</a></li>
+            </ul>
+
+            <!-- button untuk mobile menu -->
+            <button id="hamburger-btn" class="md:hidden z-50">
+                <i class="fi fi-br-menu-burger text-white w-7 h-7""></i>
+            </button>
+        </div>
+
+        <!-- List untuk mobile menu -->
+        <div id=" mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full h-screen bg-white">
+                    <ul class="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium">
+                        <li><a href="#home" class="nav-link-mobile">Home</a></li>
+                        <li><a href="#about" class="nav-link-mobile">About</a></li>
+                        <li><a href="#project" class="nav-link-mobile">Project</a></li>
+                        <li><a href="#contact" class="nav-link-mobile">Contact</a></li>
+                    </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="home" class="min-h-screen flex items-center bg-purple-500/50 pt-24 md:pt-0">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-6 ">
+            <!-- Text Nama -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-4 lending-tight text-gray-900  ">
+                    Halo, Saya <br class="hidden md:block "> <span class="text-purple-600">Direta Ramandha
+                        Pratama</span>
+                </h2>
+                <p class="text-lg md:text-2xl mb-4 leading-tight text-gray-600 ">
+                    <span id="typing-effect"></span>
+                </p>
+                <a href="#project"
+                    class="inline-block bg-purple-600 text-white  py-3 px-8 rounded-full font-bold shadow-lg  hover:bg-purple-800 transform transition-transform duration-500 ">
+                    Lihat Portofolio Saya
+                </a>
+            </div>
+            <!-- Gambar profile -->
+            <div class="md:w-1/2 flex justify-center ">
+                <div class="relative w-72 h-72 md:w-92 md:92">
+                    <div class="absolute insert-0 bg-purple-200 rounded-full blur-2xl opacity-50"></div>
+                    <img src="../asset/img/japanese-food-tonkatsu-ramen.jpg" alt=""
+                        class="relative rounded-full shadow-2xl border-8 border-white w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-gray-100 ">
+        <div class="container mx-auto px-6 ">
+            <h3 class="text-3xl font-bold text-center mb-16 ">Tentang Saya</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center ">
+                <div class="">
+                    <img src="../asset/img/cat.jpg" alt="" class="rounded-2xl shadow-2xl w-full h-auto ">
+                </div>
+                <div class="">
+                    <p class="text-lg leading-relaxed mb-6 text-gray-600 ">Saya adalah seorang pengembang web & mobile
+                        dengan hasrat untuk menciptakan aplikasi
+                        yang modern, responsif, dan fungsional. Saya percaya bahwa teknologi dapat memecahkan masalah
+                        nyata dan saya selalu antusias untuk belajar hal baru.</p>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-600">
+                        Dengan pengalaman dalam berbagai tumpukan teknologi, saya fokus pada penulisan kode yang bersih
+                        dan efisien untuk memberikan pengalaman pengguna terbaik.
+                    </p>
+                    <h4 class="text-2xl font-semibold mb-6 ">Keahlian saya</h4>
+                    <div class="flex flex-wrap gap-4 ">
+                        <span
+                            class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full font-medium flex  items-center gap-2 "><i
+                                data-lucide="figma" class="w-5 h-5 text-pink-500"></i>Figma</span>
+                        <span
+                            class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full font-medium flex  items-center gap-2 "><i
+                                data-lucide="figma" class="w-5 h-5 text-pink-500"></i>Figma</span>
+                        <span
+                            class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full font-medium flex  items-center gap-2 "><i
+                                data-lucide="figma" class="w-5 h-5 text-pink-500"></i>Figma</span>
+                        <span
+                            class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full font-medium flex  items-center gap-2 "><i
+                                data-lucide="figma" class="w-5 h-5 text-pink-500"></i>Figma</span>
+                        <span
+                            class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full font-medium flex  items-center gap-2 "><i
+                                data-lucide="figma" class="w-5 h-5 text-pink-500"></i>Figma</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    window.addEventListener("scroll", () => {
+        // -- Navbar dan Mobile menu --
+        const navbar = document.getElementById('navbar');
+        const humbergerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('.nav-link-mobile');
+        const sections = document.querySelectorAll('section');
+
+        // Toggle Menu Mobile
+        humbergerBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                humbergerBtn.innerHTML('');
+            } else {
+                mobileMenu.classList.add('hidden');
+                humbergerBtn.innerHTML('');
+            }
+            lucide.createIcons(); // RE-render Icon
+        });
+
+        // tutup menu saat di click (untuk mobile)
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    humbergerBtn.innerHTML('');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    humbergerBtn.innerHTML('');
+                }
+            });
+        });
+
+        // effect shadow pada navbar saat scroll
+        window.addEventListener('scroll', () => {
+            if (scrollY > 50) {
+                navbar.classList.add('shadow-md')
+                navbar.classList.remove('shadow-sm')
+            } else {
+                navbar.classList.add('shadow-sm')
+                navbar.classList.remove('shadow-md')
+            }
+        });
+
+        // Active link higtlighting on scroll
+        let current = ''
+        sections.forEach(sections => {
+            const sectionTop = sections.offsetTop;
+            if (pageYOffset >= sectionTop - 100) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active')
+            };
+        });
+    });
+
+    const typingElemnt = document.getElementById('typing-effect');
+    const roles = ['Web Programer', 'Frontend Development', 'Backend Development'];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let IsDeleting = false;
+
+    function type() {
+        const currentRole = roles[roleIndex];
+        let displayText = '';
+
+        if (IsDeleting) {
+            displayText = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            displayText = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        typingElemnt.textContent = displayText;
+        typingElemnt.style.borderRight = '3px solid #0d9488';
+
+        let typeSpeed = 200;
+        if (IsDeleting) typeSpeed /= 2;
+
+        if (!IsDeleting && charIndex === currentRole.length) {
+            typeSpeed = 2000;
+            IsDeleting = true;
+        } else if (IsDeleting && charIndex === 0) {
+            IsDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typingElemnt) {
+            type();
+        }
+    })
+
+
+</script>
+
+</html>
