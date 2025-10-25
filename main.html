@@ -301,7 +301,12 @@
             projects.forEach(project => {
                 const projectCard = `
         <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
-          <img src="https://placehold.co/400x250/333/FFF?text=Proyek" alt="Gambar Proyek" class="w-full h-52 object-cover"/>
+          <div class="relative">
+            <img src="https://placehold.co/400x250/333/FFF?text=Proyek" alt="Gambar Proyek" class="w-full h-52 object-cover"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                <a herf="" class="bg-purple-600 px-4 py-2 rounded-full font-semibold text-white" >Lihat Detail</a>
+             </div>
+          </div>
           <div class="p-6">
             <h4 class="text-xl font-bold mb-2 truncate">${project.title}</h4>
             <p class="text-gray-600 mb-4 h-24 overflow-hidden text-ellipsis">${project.body}</p>
